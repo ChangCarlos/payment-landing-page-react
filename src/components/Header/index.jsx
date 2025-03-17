@@ -1,22 +1,36 @@
 import { LoginBtn, SignupBtn } from '../Buttons';
 import './Header.css'
 
-const options = [
-    'Features',
-    'Pricing',
-    'Help',
-    'Blog',
-    'About Us'
+const options = [ {
+    id: 0,
+    name: 'Features'
+},
+{
+    id: 1,
+    name: 'Pricing'
+},
+{
+    id: 2,
+    name: 'Help'
+},
+{
+    id: 3,
+    name: 'Blog'
+},
+{
+    id: 4,
+    name: 'About Us'
+}
 ]
 
 const Header = () => {
     const showOptions = options.map(option =>
-        <a href='#'>{option}</a>
+        <a key={option.id} href='#'>{option.name}</a>
     )
     return (
         <header>
             <div class="navbar">
-                <img src="\src\assets\logo.png" alt="" class="logo" />
+                <img src="public\assets\logo.png" alt="" class="logo" />
                     <div class="nav-links">
                         {showOptions}
                     </div>

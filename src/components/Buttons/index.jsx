@@ -16,7 +16,7 @@ export const DownloadBtn = () => {
     return (
         <button class="download-btn">
             Download
-            <img src="\src\assets\download.png" alt="download button" />
+            <img src="public\assets\download.png" alt="download button" />
         </button>
     )
 }

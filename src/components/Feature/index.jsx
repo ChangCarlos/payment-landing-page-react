@@ -11,7 +11,7 @@ const Feature = () => {
                 <DownloadBtn />
             </div>
             <div class="image-container">
-                <img src="\src\assets\app-image.png" alt="image of the app" />
+                <img src="public\assets\app-image.png" alt="image of the app" />
             </div>
         </div>
     )
