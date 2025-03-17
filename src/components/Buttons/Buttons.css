@@ -1,0 +1,44 @@
+.nav-btn {
+    display: flex;
+    gap: 10px
+}
+
+.login, .signup {
+    width: 132px;
+    height: 54px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #e9dcff;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
+.login:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: 0.5s;
+}
+
+.signup:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: 0.5s;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 188px;
+    height: 66px;
+    background-color: #e9dcff;
+    color: #1e1e1e;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
