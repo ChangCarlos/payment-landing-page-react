@@ -1,19 +1,26 @@
 import { DownloadBtn } from '../Buttons'
-import './Feature.css'
+import { AppContainer, AppInfo, AppInfoContainer, AppInfoTitle } from './Feature'
+
 
 const Feature = () => {
     return (
-        <div class="app-container">
-            <div class="app-info-container">
-                <p>START SAVING MONEY</p>
-                <h1>Smart Credit Card</h1> 
-                <h1>For your Daily Life.</h1>
+        <AppContainer>
+            <AppInfoContainer>
+                <AppInfo>
+                    START SAVING MONEY
+                </AppInfo>
+                <AppInfoTitle>
+                    Smart Credit Card
+                </AppInfoTitle>
+                <AppInfoTitle>
+                    For your Daily Life.
+                </AppInfoTitle>
                 <DownloadBtn />
-            </div>
+            </AppInfoContainer>
             <div class="image-container">
                 <img src="public\assets\app-image.png" alt="image of the app" />
             </div>
-        </div>
+        </AppContainer>
     )
 }
 

@@ -1,28 +1,27 @@
-.navbar {
+import styled from "styled-components";
+
+export const NavBar = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 40px;
-}
-
-.nav-links {
+`
+export const NavLinks = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 500px;
-}
-
-.nav-links a {
+`
+export const Links = styled.a`
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-}
+    cursor: pointer;
+`
+export const NavBtnContainer = styled.div`
+    display: flex;
+    gap: 10px;
+`
 
-.nav-links a:hover {
-    text-decoration: underline;
-    text-decoration-color: #e9dcff;
-    color: #e9dcff;
-    transition: 0.5s;
-}
 
 

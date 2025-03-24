@@ -1,7 +1,8 @@
 import { LoginBtn, SignupBtn } from '../Buttons';
-import './Header.css'
+import { Links, NavBar, NavBtnContainer, NavLinks } from './Header';
 
-const options = [ {
+
+const options = [{
     id: 0,
     name: 'Features'
 },
@@ -25,21 +26,19 @@ const options = [ {
 
 const Header = () => {
     const showOptions = options.map(option =>
-        <a key={option.id} href='#'>{option.name}</a>
+        <Links key={option.id} href='#'>{option.name}</Links>
     )
     return (
-        <header>
-            <div class="navbar">
-                <img src="public\assets\logo.png" alt="" class="logo" />
-                    <div class="nav-links">
-                        {showOptions}
-                    </div>
-                    <div class="nav-btn">
-                        <LoginBtn />
-                        <SignupBtn />
-                    </div>
-            </div>
-        </header>
+        <NavBar>
+            <img src="public\assets\logo.png" alt="" class="logo" />
+            <NavLinks>
+                {showOptions}
+            </NavLinks>
+            <NavBtnContainer>
+                <LoginBtn />
+                <SignupBtn />
+            </NavBtnContainer>
+        </NavBar>
     )
 }
 

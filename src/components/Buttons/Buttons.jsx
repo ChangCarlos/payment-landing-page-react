@@ -1,9 +1,6 @@
-.nav-btn {
-    display: flex;
-    gap: 10px
-}
+import styled from "styled-components";
 
-.login, .signup {
+export const NavButton = styled.button`
     width: 132px;
     height: 54px;
     border-radius: 10px;
@@ -13,21 +10,9 @@
     background-color: #e9dcff;
     color: #1e1e1e;
     cursor: pointer;
-}
+`
 
-.login:hover {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    transition: 0.5s;
-}
-
-.signup:hover {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    transition: 0.5s;
-}
-
-.download-btn {
+export const DownloadButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,4 +26,4 @@
     font-size: 24px;
     font-weight: 700;
     cursor: pointer;
-}
+`

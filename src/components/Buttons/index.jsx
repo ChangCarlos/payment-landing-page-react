@@ -1,22 +1,27 @@
-import './Buttons.css'
+import { DownloadButton, NavButton } from "./Buttons"
+
 
 export const LoginBtn = () => {
     return (
-        <button class="login">Log In</button>
+        <NavButton>
+            Log In
+        </NavButton>
     )
 }
 
 export const SignupBtn = () => {
     return (
-        <button class="signup">Sign Up</button>
+        <NavButton>
+            Sign Up
+        </NavButton>
     )
 }
 
 export const DownloadBtn = () => {
     return (
-        <button class="download-btn">
+        <DownloadButton>
             Download
             <img src="public\assets\download.png" alt="download button" />
-        </button>
+        </DownloadButton>
     )
 }
